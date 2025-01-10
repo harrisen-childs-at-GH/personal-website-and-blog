@@ -65,3 +65,8 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
+
+gem "tailwindcss-rails", "~> 3.1"
+
+gem 'binding_of_caller', '~> 1.0'
+gem 'rubocop', '~>1.52.0', require: false
