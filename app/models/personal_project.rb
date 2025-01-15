@@ -1,0 +1,2 @@
+class PersonalProject < ApplicationRecord
+end
