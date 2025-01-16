@@ -109,6 +109,7 @@ GEM
       reline (>= 0.3.8)
     debug_inspector (1.2.0)
     drb (2.2.1)
+    dry-initializer (3.2.0)
     erubi (1.13.1)
     globalid (1.2.1)
       activesupport (>= 6.1)
@@ -263,6 +264,10 @@ GEM
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
     unicode-display_width (2.6.0)
+    view_component (3.21.0)
+      activesupport (>= 5.2.0, < 8.1)
+      concurrent-ruby (~> 1.0)
+      method_source (~> 1.0)
     web-console (4.2.1)
       actionview (>= 6.0.0)
       activemodel (>= 6.0.0)
@@ -287,10 +292,11 @@ DEPENDENCIES
   bootsnap
   capybara
   debug
+  dry-initializer (~> 3.0)
   importmap-rails
   jbuilder
   pg (~> 1.2)
-  pry
+  pry (~> 0.15.2)
   puma (>= 5.0)
   rails (~> 7.1.4, >= 7.1.4.2)
   rubocop (~> 1.52.0)
@@ -300,6 +306,7 @@ DEPENDENCIES
   tailwindcss-rails (~> 3.1)
   turbo-rails
   tzinfo-data
+  view_component (~> 3.21)
   web-console
 
 RUBY VERSION

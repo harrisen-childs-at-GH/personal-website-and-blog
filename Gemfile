@@ -69,5 +69,7 @@ end
 gem 'tailwindcss-rails', '~> 3.1'
 
 gem 'binding_of_caller', '~> 1.0'
-gem 'pry'
+gem 'dry-initializer', '~> 3.0'
+gem 'pry', '~> 0.15.2'
 gem 'rubocop', '~>1.52.0', require: false
+gem 'view_component', '~> 3.21'
