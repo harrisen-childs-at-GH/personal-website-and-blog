@@ -7,9 +7,9 @@ Rails.application.routes.draw do
   get 'up' => 'rails/health#show', as: :rails_health_check
 
   # direct routing for "static pages"
-  get '/about', to: 'pages#about'
-  get '/resume', to: 'pages#resume'
-  get '/projects', to: 'pages#projects'
+  get '/about', to: 'pages#about', as: :about
+  get '/resume', to: 'pages#resume', as: :resume
+  get '/projects', to: 'pages#projects', as: :projects
 
   # resource routing for my personal project model I am using
   resources :personal_projects

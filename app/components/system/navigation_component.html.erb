@@ -1,0 +1,9 @@
+<div class="bg-red-200 py-4 border-b text-xl w-screen mr-4">
+  <ul class="flex">
+    <% navigation_items.each do |nav_item| %>
+    <li class="ml-6">
+      <%= link_to nav_item[:name], nav_item[:path], class: "hover:text-blue-800" %>
+    </li>
+    <% end %>
+  </ul>
+</div>
