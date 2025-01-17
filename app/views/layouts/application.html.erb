@@ -10,7 +10,11 @@
 
   <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
   <%= javascript_importmap_tags %>
-  <%= render NavigationComponent.new(items: ['a', 'b', 'c']) %>
+  <%= render System::NavigationComponent.new(navigation_items: [
+        { name: 'Home', path: root_path },
+        { name: 'About', path: about_path },
+        { name: 'Resume', path: resume_path }
+      ]) %>
 </head>
 
 <body>
